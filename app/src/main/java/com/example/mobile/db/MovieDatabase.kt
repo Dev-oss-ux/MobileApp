@@ -1,7 +1,9 @@
 package com.example.mobile.db
+import android.content.ContentValues
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
+import androidx.core.content.contentValuesOf
 import com.example.mobile.data.User
 
 
@@ -31,7 +33,20 @@ class MovieDatabase(mContext : Context) : SQLiteOpenHelper(
     }
 
     fun addUser(user: User): Boolean{
-        return false
+
+        //inserer un nouveau utilisateur
+        val db = this.writableDatabase
+        val values = ContentValues()
+        values.put(NAME, user.name)
+        values.put(EMAIL, user.email)
+        values.put(NAME, user.password)
+
+        //insert into users(nom, email, password) values(user.nom, user.email, user.password)
+        val result = db.insert(USERS_TABLE_NAME, null, values).toInt()
+
+        db.close()
+
+        return result != -1
     }
 
 

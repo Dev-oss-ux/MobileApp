@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".PostDetailActivity">
 
 
@@ -14,6 +15,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="91dp"
         android:padding="0dp"
+        android:textColor="@color/white"
         android:text="titre du film"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -26,13 +28,15 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="401dp"
-        android:layout_height="184dp"
+        android:layout_width="409dp"
+        android:layout_height="151dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/image1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="-1dp"
+        tools:layout_editor_absoluteY="33dp"
         tools:src="@tools:sample/avatars" />
 
     <TextView
@@ -41,6 +45,7 @@
         android:layout_height="70dp"
         android:layout_marginStart="2dp"
         android:layout_marginTop="16dp"
+        android:textColor="@color/white"
         android:text="Inception est un film 5 de science-fiction d'action réalisé par Christopher Nolan en 2010. Le film suit le personnage de Dom Cobb"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.96"
@@ -55,6 +60,7 @@
         android:layout_marginTop="8dp"
         android:text="Revenu: 12,980,342€"
         android:textSize="12dp"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvNote" />
@@ -66,6 +72,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:text="notation: 6.5"
+        android:textColor="@color/white"
         android:textSize="12dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -78,6 +85,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:textSize="12dp"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTitre" />

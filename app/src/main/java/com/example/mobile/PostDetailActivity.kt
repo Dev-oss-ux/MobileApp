@@ -1,9 +1,11 @@
 package com.example.mobile
 
-import androidx.appcompat.app.AppCompatActivity
+import android.graphics.Bitmap
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+
 
 class PostDetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,12 +17,15 @@ class PostDetailActivity : AppCompatActivity() {
         val tvBudget = findViewById<TextView>(R.id.tvBudget)
         val tvDescription = findViewById<TextView>(R.id.tvDescription1)
         val tvPublication = findViewById<TextView>(R.id.tvPublication)
+        val tvImageView = findViewById<ImageView>(R.id.imageView)
+
 
         val titre = intent.getStringExtra("titre")
         val note = intent.getStringExtra("note")
         val budget = intent.getStringExtra("budget")
         val publication = intent.getStringExtra("publication")
         val description = intent.getStringExtra("description")
+
 
         tvTitre.text = titre
         tvDescription.text = description

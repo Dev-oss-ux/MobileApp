@@ -26,9 +26,11 @@ class PostsAdapter(
         //tvTitre.text = post.titre
         val tvDescription = itemView.findViewById<TextView>(R.id.tvDescription1)
         val imagePost = itemView.findViewById<ImageView>(R.id.imagePost)
+        //val budget = itemView.findViewById<TextView>(R.id.tvBudget)
 
         tvTitre.text = post.titre
         tvDescription.text = post.description
+        //budget.text = post.budget
         imagePost.setImageResource(post.image)
 
         imageShowPopup.setOnClickListener {
@@ -40,6 +42,7 @@ class PostsAdapter(
                     R.id.itemShow -> {
                         Intent(mContext, PostDetailActivity::class.java).also {
                             it.putExtra("titre", post.titre)
+                           // it.putExtra("note", post.budget)
                             it.putExtra("description", post.description)
                             mContext.startActivity(it)
                         }

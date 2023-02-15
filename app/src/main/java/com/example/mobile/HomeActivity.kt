@@ -27,19 +27,19 @@ class HomeActivity : AppCompatActivity(){
          listPosts = findViewById(R.id.listPosts)
 
         postsArray = arrayListOf(
-           Post("Babylon","Note : 6.5", "Budget : 12.435.532 €","Date de publication: 12-09-2022","Inception est un film 1 de science-fiction d'action réalisé par Christopher Nolan en 2010. Le film suit le personnage de Dom Cobb...",
+           Post("Babylon","Note : 6.5", "Budget : 12.435.532 €","Date de publication: 12-09-2022","Inception est un film 1 de science-fiction d'action réalisé par Christopher Nolan en 2010. Le film suit le personnage de Dom Cobb, À Derry, dans le Maine, sept adolescents ayant du mal à s'intégrer se sont regroupés au sein ...",
                R.drawable.image1
            ),
-           Post("Tempete", "Note : 7.5", "Budget : 11.435.532 €","Date de publication: 02-02-2021","Inception est un film 1 de science-fiction d'action réalisé par Christopher Nolan en 2010. Le film suit le personnage de Dom Cobb...",
+           Post("Tempete", "Note : 7.5", "Budget : 11.435.532 €","Date de publication: 102-02-2021","Inception est un film 1 de science-fiction d'action réalisé par Christopher Nolan en 2010. Le film suit le personnage de Dom Cobb, À Derry, dans le Maine, sept adolescents ayant du mal à s'intégrer se sont regroupés au sein ...",
                R.drawable.image2
            ),
-            Post("Hostalga", "Note : 5.5", "Budget : 2.435.532 €","Date de publication: 01-09-2023","Inception est un film 1 de science-fiction d'action réalisé par Christopher Nolan en 2010. Le film suit le personnage de Dom Cobb...",
+            Post("Hostalga", "Note : 5.5", "Budget : 2.435.532 €","Date de publication: 01-09-2023","Inception est un film 1 de science-fiction d'action réalisé par Christopher Nolan en 2010. Le film suit le personnage de Dom Cobb, À Derry, dans le Maine, sept adolescents ayant du mal à s'intégrer se sont regroupés au sein ...",
                 R.drawable.image3
             ),
-            Post("16 ans", "Note : 8.3", "Budget : 14.435.532 €","Date de publication: 23-04-2012","Inception est un film 1 de science-fiction d'action réalisé par Christopher Nolan en 2010. Le film suit le personnage de Dom Cobb...",
+            Post("16 ans", "Note : 8.3", "Budget : 14.435.532 €","Date de publication: 23-04-2012","Inception est un film 1 de science-fiction d'action réalisé par Christopher Nolan en 2010. Le film suit le personnage de Dom Cobb, À Derry, dans le Maine, sept adolescents ayant du mal à s'intégrer se sont regroupés au sein ...",
                 R.drawable.image4
             ),
-            Post("Rascals", "Note : 7.2", "Budget : 23.435.532 €","Date de publication: 11-05-2019","Inception est un film 1 de science-fiction d'action réalisé par Christopher Nolan en 2010. Le film suit le personnage de Dom Cobb...",
+            Post("Rascals", "Note : 7.2", "Budget : 23.435.532 €","Date de publication: 11-05-2019","Inception est un film 1 de science-fiction d'action réalisé par Christopher Nolan en 2010. Le film suit le personnage de Dom Cobb, À Derry, dans le Maine, sept adolescents ayant du mal à s'intégrer se sont regroupés au sein ...",
                 R.drawable.image5
             ),
         )
@@ -50,8 +50,9 @@ class HomeActivity : AppCompatActivity(){
             val clickedPost = postsArray[position]
             Intent(this, PostDetailActivity::class.java).also {
                   it.putExtra("titre", clickedPost.titre)
-                it.putExtra("note", clickedPost.note)
-                it.putExtra("budget", clickedPost.budget)
+                  it.putExtra("note", clickedPost.note)
+                  it.putExtra("budget", clickedPost.budget)
+                  it.putExtra("publication", clickedPost.publication)
                   it.putExtra("description", clickedPost.description)
 
                 startActivity(it)
