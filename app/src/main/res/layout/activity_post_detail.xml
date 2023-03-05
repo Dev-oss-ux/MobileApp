@@ -28,15 +28,15 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="409dp"
-        android:layout_height="151dp"
-        android:scaleType="fitCenter"
+        android:layout_width="413dp"
+        android:layout_height="293dp"
+        android:scaleType="fitXY"
         android:src="@drawable/image1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="33dp"
+        tools:layout_editor_absoluteY="3dp"
         tools:src="@tools:sample/avatars" />
 
     <TextView
