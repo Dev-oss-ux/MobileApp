@@ -1,29 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:srcCompat="@tools:sample/avatars" />
     <TextView
         android:text="Titre du film :"
+        android:padding="10dp"
+        android:layout_marginTop="18dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <EditText
         android:id="@+id/editTextTitre22"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-
-    <TextView
-        android:text="Réalisateur :"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <EditText
-        android:id="@+id/editTextRealisateu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
     <TextView
         android:text="Année de sortie :"
+        android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <EditText
@@ -33,7 +32,8 @@
         android:inputType="number" />
 
     <TextView
-        android:text="Durée en minutes :"
+        android:text="Budget :"
+        android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <EditText
@@ -43,7 +43,8 @@
         android:inputType="number" />
 
     <TextView
-        android:text="Genre :"
+        android:text="Note :"
+        android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <EditText
@@ -53,6 +54,7 @@
 
     <TextView
         android:text="Acteurs :"
+        android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <EditText
@@ -60,21 +62,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <TextView
-        android:text="Synopsis :"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <EditText
-        android:id="@+id/editTextSynopsi"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textMultiLine"
-        android:lines="3" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="match_parent"
+        android:layout_width="390dp"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:layout_margin="10dp"
+        android:text="Enregistrer" />
+
+    <TextView
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:textColor="@color/white"
+        android:paddingLeft="158dp"
+        android:background="?attr/colorError"
+        android:text="Annuler" />
+
+
 
 </LinearLayout>
