@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         val connect = findViewById<Button>(R.id.connect)
 
 
+
         // l'etat de l'application : connectée ou pas :
         sharedPreferences = this.getSharedPreferences("app_state", Context.MODE_PRIVATE)
         db = MovieDatabase(this) //initialisation  de la bd
@@ -75,5 +76,6 @@ class MainActivity : AppCompatActivity() {
                 startActivity(it)
             }
         }
+
     }
 }

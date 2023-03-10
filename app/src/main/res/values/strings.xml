@@ -1,6 +1,5 @@
 <resources>
-    <string name="app_name">MovieApp</string>
-    <string name="app_home">Accueil</string>
+    <string name="app_name">Accueil</string>
     <string name="Error">veiller renseigner tous les champs</string>
     <string name="ErrorPassword">le mot de passe nest pas le meme</string>
     <string name="succesCount">votre a été crée avec succès</string>

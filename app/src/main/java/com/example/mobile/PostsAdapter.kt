@@ -42,7 +42,9 @@ class PostsAdapter(
                     R.id.itemShow -> {
                         Intent(mContext, PostDetailActivity::class.java).also {
                             it.putExtra("titre", post.titre)
-                           // it.putExtra("note", post.budget)
+                            it.putExtra("publication", post.publication)
+                            it.putExtra("budget", post.budget)
+                            it.putExtra("note", post.note)
                             it.putExtra("description", post.description)
                             mContext.startActivity(it)
                         }

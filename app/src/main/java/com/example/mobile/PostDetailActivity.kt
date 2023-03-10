@@ -20,6 +20,7 @@ class PostDetailActivity : AppCompatActivity() {
         val tvImageView = findViewById<ImageView>(R.id.imageView)
 
 
+
         val titre = intent.getStringExtra("titre")
         val note = intent.getStringExtra("note")
         val budget = intent.getStringExtra("budget")

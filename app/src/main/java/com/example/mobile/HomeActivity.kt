@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import android.widget.ListView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
@@ -70,10 +71,25 @@ class HomeActivity : AppCompatActivity(){
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
         R.id.itemAdd -> {
-            Toast.makeText(this, "Ajouter un nouveau film", Toast.LENGTH_LONG).show()
+            val intentAddMovie = Intent (this, AddMovieActivity::class.java).also {
+                startActivity(it)
+            }
         }
         R.id.itemConfig -> {
-            Toast.makeText(this, "Parametrer votre compte", Toast.LENGTH_LONG).show()
+            val intentProfil = Intent (this, ProfilActivity::class.java).also {
+                val txtEmail = "sfef"
+                val txtNom = "Barry"
+                val txtPrenom = "Mamadou"
+                val txtAge = "25 ans"
+                val image = ""
+                it.putExtra("email", txtEmail)
+                it.putExtra("email", image)
+                it.putExtra("nom", txtNom)
+                it.putExtra("age", txtAge)
+                it.putExtra("prenom", txtPrenom)
+                startActivity(it)
+            }
+
         }
         R.id.itemLogout -> {
 

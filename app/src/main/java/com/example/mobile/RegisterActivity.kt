@@ -49,7 +49,7 @@ class RegisterActivity : AppCompatActivity() {
                 //verifier si le saisi du mp correspond
                 if (password != passwordConfirm) {
                     tvError.text =
-                        getString(R.string.ErrorPassword) // text renseigné depsuis le fichier string
+                        getString(R.string.ErrorPassword) // text renseigné depuis le fichier string
                     tvError.visibility = View.VISIBLE
                 } else {
                     val user = User(0, name, email, password)
